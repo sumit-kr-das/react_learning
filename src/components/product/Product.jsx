@@ -1,10 +1,10 @@
 import "./product.css";
 
-const Product = ({item}) => {
+const Product = ({ name, price }) => {
   return (
-    <div className="product">
-      <h1>{item.productName}</h1>
-      <h2>price: {item.price}$</h2>
+    <div className="product" style={{ background: "white" }}>
+      <h1>Product name: {name}</h1>
+      <h2>price: {price}$</h2>
     </div>
   );
 };

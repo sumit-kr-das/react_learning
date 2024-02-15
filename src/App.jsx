@@ -2,39 +2,17 @@ import "./app.css";
 import NavBar from "./components/Nav/NavBar";
 import Product from "./components/product/Product";
 
-const productData = [
-  {
-    productName: "Iphone 12 pro",
-    price: 120,
-  },
-  {
-    productName: "Iphone 13 pro",
-    price: 120,
-  },
-  {
-    productName: "Iphone 14 pro",
-    price: 120,
-  },
-  {
-    productName: "Iphone 15 pro",
-    price: 120,
-  },
-  {
-    productName: "Iphone 16 pro",
-    price: 120,
-  },
-];
-
 const App = () => {
   return (
-    <>
+    <div style={{ background: "gray", height: "100vh" }}>
       <NavBar />
-      <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-        {productData.map((item, index) => (
-          <Product item={item} key={index} />
-        ))}
+      <div style={{ display: "flex" }}>
+        <Product name="Iphone 12" price="200" />
+        <Product name="Iphone 13" price="200" />
+        <Product name="Iphone" price="200" />
+        <Product name="Iphone" price="200" />
       </div>
-    </>
+    </div>
   );
 };
 

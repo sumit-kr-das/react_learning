@@ -1,4 +1,4 @@
-import './nav.css'
+import "./nav.css";
 
 const NavBar = () => {
   const navStyle = {
@@ -10,7 +10,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav style={navStyle}>
+    <section style={navStyle}>
       <img src="/assets/vite.svg" alt="my logo" />
       <ul>
         <li>
@@ -26,7 +26,7 @@ const NavBar = () => {
           <a href="">Product</a>
         </li>
       </ul>
-    </nav>
+    </section>
   );
 };
 
